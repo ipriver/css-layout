@@ -73,7 +73,7 @@ table {
 }
 
 
-/* TODO: minimal zoom 50% or make it more flexible; */
+/* TODO: minimal zoom 50% */
 
 html {
 	min-width:1200px;
@@ -143,8 +143,6 @@ main {
 	padding-bottom: 73px;
 }
 
-/* TODO: slice lines; */
-
 .lines {
 	position: absolute;
 	left: -101%;
@@ -157,8 +155,8 @@ main {
 .line-1 {
 	top: -5%;
 	background-color: #04e4a2;
+	
 }
-
 
 .line-2 {
 	top: 20%;
@@ -276,7 +274,11 @@ main {
 	border-radius: 8px;
 }
 
-/* TODO: change arrow in <select> with jQuery; */
+select {
+  -webkit-appearance: none; 
+  background: url(../img/arrow.png) no-repeat right #ffffff;
+  
+}
 
 footer {
 	position:absolute;
@@ -295,24 +297,24 @@ footer p {
 	font-family: MonsterratLight, Arial, sans-serif;
 }
 
-/* TODO: <i> in the center; */
-
 footer p:first-child {
 	margin-left: 108px;
 }
 
-footer p:first-child i {
-	font-size: 1.2rem;
+footer p:first-child::before {
+	position:relative;
+	vertical-align: top;
+	content: "\f1f9";
+  	font-family: "FontAwesome";
+  	font-size: 1.2rem;
 }
 
-footer p:last-child i {
-	margin-right: 10px;
+footer p:last-child::before {
+	position:relative;
+	content: "\f003";
+	vertical-align: top;
+  	font-family: "FontAwesome";
+  	margin-right: 10px;
 	font-size: 2.6rem;
 	color: #04e4a2;
-}
-
-select {
-  -webkit-appearance: none; 
-  background-color: #BADA55;
-  
 }
