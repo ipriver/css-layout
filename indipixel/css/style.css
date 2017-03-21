@@ -76,23 +76,25 @@ table {
 /* TODO: minimal zoom 50% or make it more flexible; */
 
 html {
+	min-width:1200px;
+	box-sizing: border-box;
 	font-size: 10px;
 }
 
 header {
-	position: relative;
 	z-index: 1;
+	position: relative;
 }
 
 .first-line {
-	height: 22px;
 	width: 100%;
+	height: 22px;
 	background-color: #04e4a2;
 }
 
 .second-line {
-	height: 78px;
 	width: 100%;
+	height: 78px;
 	background-color: #e94643;
 	line-height: 78px;
 
@@ -117,8 +119,12 @@ header {
 	font-size: 1.6rem;
 	text-decoration: none;
 	font-family: GothamBook, Arial, sans-serif;
-	border-bottom: 4px solid #fdd835;
+	
 	text-transform: uppercase;
+}
+
+.second-line nav a:hover {
+	border-bottom: 4px solid #fdd835;
 }
 
 .content {
@@ -142,21 +148,21 @@ main {
 .lines {
 	position: absolute;
 	left: -101%;
-	height: 85px;
 	width: 2000px;
+	height: 85px;
 	background-color: #04e4a2;
 	transform: rotate(38deg);	
 }
 
 .line-1 {
-	background-color: #04e4a2;
 	top: -5%;
+	background-color: #04e4a2;
 }
 
 
 .line-2 {
-	background-color: #69f0ae;
 	top: 20%;
+	background-color: #69f0ae;
 }
 
 .right {
@@ -165,8 +171,8 @@ main {
 }
 
 .slide-content {
-	width: 100%;
 	height: 583px;
+	width: 100%;
 	background-color: #ef5350;
 	color: #ffffff;
 }
@@ -186,9 +192,9 @@ main {
 }
 
 .slide-content h2 {
-	text-transform: uppercase;
 	padding-top: 190px;
 	padding-bottom: 36px;
+	text-transform: uppercase;
 	font-size: 3.1rem;
 	font-family: MontserratRegular, Arial, sans-serif;
 }
@@ -196,20 +202,20 @@ main {
 .slide-content p {
 	padding-bottom: 32px;
 	font-size: 1.9rem;
-	border-bottom: 2px dashed #e94643;
 	font-family: MontserratUL, Arial, sans-serif;
+	border-bottom: 2px dashed #e94643;
 }
 
 .slide-content a {
 	margin-top: 30px;
+	margin-right: 20px;
+	width: 166px;
+	height: 53px;
 	line-height: 53px;
 	text-align: center;
 	font-size: 1.8rem;
-	height: 53px;
-	width: 166px;
-	margin-right: 20px;
-	background-color: #04e4a2;
 	font-family: MontserratRegular, Arial, sans-serif;
+	background-color: #04e4a2;
 }
 
 .link-button {
@@ -235,15 +241,15 @@ main {
 }
 
 .form-content .inp-panel {
+	padding: 0 25px;
+	margin-bottom: 17px;
+	width: 250px;
+	height: 50px;
 	color: #636363;
 	box-sizing: border-box;
 	font-size: 1.6rem;
 	font-family: MonsterratLight, Arial, sans-serif;
-	padding: 0 25px;
-	height: 50px;
-	width: 250px;
 	border: 2px solid #e5f3fd;
-	margin-bottom: 17px;
 	border-radius: 5px;
 	background-color: #ffffff;
 }
@@ -256,17 +262,17 @@ main {
 	padding-top: 13px;
 	resize: none;
 	height: 100px;
-	width: 519px;
+	width: 523px;
 	margin-bottom: 10px;
 }
 
 .form-content .link-button {
-	height: 45px;
 	width: 120px;
+	height: 45px;
 	border: none;
+	font-size: 1.8rem;
 	font-family: MonsterratSemiB, Arial, sans-serif;
 	background-color: #ef5350; 
-	font-size: 1.8rem;
 	border-radius: 8px;
 }
 
@@ -282,9 +288,9 @@ footer {
 
 footer p {
 	display: inline-block;
-	color: #636363;
 	margin-right: 346px;
 	font-size: 1.5rem;
+	color: #636363;
 	line-height: 73px;
 	font-family: MonsterratLight, Arial, sans-serif;
 }
@@ -303,4 +309,10 @@ footer p:last-child i {
 	margin-right: 10px;
 	font-size: 2.6rem;
 	color: #04e4a2;
+}
+
+select {
+  -webkit-appearance: none; 
+  background-color: #BADA55;
+  
 }
