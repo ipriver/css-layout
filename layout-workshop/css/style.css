@@ -24,7 +24,7 @@ html,body {
 
 .content {
   margin: 0 auto;
-  width:1530px;
+  width: 1530px;
 }
 
 
@@ -35,63 +35,85 @@ header {
   position: relative;
 }
 
-header .content header {
+.navigation-header {
   height: 55px;
 }
 
-header .content .navigation-header nav a {
-  display: inline-block;
+.navigation-header a {
+  position: relative;
   box-sizing: border-box;
   width: 55px;
-  border: 0 solid #3c3c3c;
-  border-width: 0 1px 0 0;
-  position: relative;
-  float:right;
+  float: right;
   color: #ffffff;
-  text-align:center;
+  text-align: center;
   line-height: 55px;
   font-size: 1.6rem;
-}
-
-header .content .navigation-header nav a:nth-child(4) {
-  color: #999999;
-}
-
-header .content .navigation-header nav a:nth-child(5) {
-  border: 0 solid #3c3c3c;
-  border-width: 0 1px 0 1px;
-}
-
-header .content .navigation-header nav a:last-child {
-  border: 0 solid #3c3c3c;
-  border-width: 0 1px 0 1px;
-  float:left;
-}
-
-header .content .navigation-header nav a:hover {
-  background-color: #0442a9;
-}
-
-header .title {
-  font-family: 'Monsterrat';
   text-decoration: none;
-  left: 50%;
-  position: absolute;
-  margin: 0 auto;
-  text-transform: uppercase;
-  text-align: center;
-  color:white;
-  height: 55px;
-  font-size: 2rem;
-  line-height: 55px;
+  overflow: hidden;
+  border: 0 solid #3c3c3c;
+  border-width: 0 1px 0 0;
 }
 
-
-header .content .navigation-header nav a::after {
+.navigation-header a::after {
   content: '';
   display: block;
   clear: both;
 }
+
+.navigation-header a:nth-child(5) {
+  border: 0 solid #3c3c3c;
+  border-width: 0 1px 0 1px;
+}
+
+.navigation-header a:nth-child(6) {
+  float:left;
+  border: 0 solid #3c3c3c;
+  border-width: 0 1px 0 1px;
+}
+
+.navigation-header a::before {
+  font-family: "FontAwesome";
+}
+.navigation-header a:nth-child(1)::before {
+  content: "\f002";
+}
+.navigation-header a:nth-child(2)::before {
+  content: "\f09a";
+}
+.navigation-header a:nth-child(3)::before {
+  content: "\f173";
+}
+.navigation-header a:nth-child(4)::before {
+  content: "\f099";
+}
+.navigation-header a:nth-child(5)::before {
+  content: "\f09e";
+}
+.navigation-header a:nth-child(6)::before {
+  content: "\f0c9";
+}
+
+.content .navigation-header a:hover {
+  color: #999999;
+}
+
+.navigation-header .title {
+  letter-spacing: 5px;
+  position: absolute;
+  left: 50%;
+  margin: 0 auto;
+  float: none;
+  width: auto;
+  text-transform: uppercase;
+  font-size: 2rem;
+  border: none;
+  font-family: 'Monsterrat', Arial, sans-serif;
+}
+
+.navigation-header .title span {
+  font-size: 2.4rem;
+}
+
 
 
 header .content .main-picture {
