@@ -64,7 +64,6 @@ header {
   border: 0 solid #3c3c3c;
   border-width: 0 1px 0 1px;
 }
-
 .navigation-header a:nth-child(6) {
   float:left;
   border: 0 solid #3c3c3c;
@@ -93,8 +92,11 @@ header {
   content: "\f0c9";
 }
 
-.content .navigation-header a:hover {
+.navigation-header a:hover {
   color: #999999;
+}
+.navigation-header .title:hover {
+  color: #ffffff;
 }
 
 .navigation-header .title {
@@ -109,63 +111,72 @@ header {
   border: none;
   font-family: 'Monsterrat', Arial, sans-serif;
 }
-
 .navigation-header .title span {
   font-size: 2.4rem;
 }
 
-
-
-header .content .main-picture {
+.slider {
   position: relative;
-  
+  color: #ffffff;
 }
 
-header .content .main-picture .slider {
+.slider .slider-controls {
   position: absolute;
-  top: 50%;
-  left: 85%;
-  width: 300px;
-  transform: rotate(270deg)
-
+  top: 45%;
+  left: 87%;
+  transform: rotate(270deg);
 }
 
-header .content .main-picture .slider-blocks {
-  width: 40px;
+.slider .slider-blocks {
   margin: 0 auto;
+  width: max-content;
 }
 
-header .content .main-picture .slider-blocks a{
+.slider .slider-blocks a {
   display: inline-block;
-  height: 5px;
-  width: 5px;
+  margin: 10px 3px;
+  width: 6px;
+  height: 6px;
   border: 1px solid white;
 }
-header .content .main-picture .slider-blocks a:nth-child(2) {
-  background-color:#999999;
-}
-header .content .main-picture .slider-blocks a:hover {
-  background-color: #0442a9;
 
-}
-header .content .main-picture .slider-links {
-  text-align:center;
+.slider .slider-blocks a:hover {
+  background-color: #999999;
 }
 
-header .content .main-picture .slider-links a {
-  color:white;
-  font-family: 'Hindlight';
-  font-size: 2.5rem;
+.slider .slider-links {
+  display: inline-block;
+  width: max-content;
+}
+
+.slider .slider-links a,
+.slider .slider-links p {
+  display: inline-block;
+  color: inherit;
+  font-family: 'Hindlight', Arial, sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
   text-transform: uppercase;
   text-decoration: none;
 }
-
-header .content .main-picture .slider-links a:hover {
-  color: #0442a9;
+.slider .slider-links p {
+  margin: 0 15px;
 }
 
+.slider .slider-links a:hover {
+  color: #999999;
+}
 
-
+.slider .slider-links a::before {
+  font-family: "FontAwesome";
+  font-size: 2.2rem;
+}
+.slider .slider-links a:nth-child(1)::before {
+  content: "\f177";
+}
+.slider .slider-links a:nth-child(3)::before {
+  content: "\f178";
+}
 
 
 
@@ -185,7 +196,7 @@ main .content {
 }
 
 main .content form{
-  font-family: 'Monsterrat';
+  font-family: 'Monsterrat', Arial, sans-serif;
   margin-bottom: 100px;
 }
 
@@ -307,7 +318,7 @@ main .content .main-content .mc-1 {
 }
 
 main .content .main-content .mc-1 ul li {
-  font-family: 'Hindlight';
+  font-family: 'Hindlight', Arial, sans-serif;
   display: block;
   background-color: white;
   border: 1px solid #f5f5f7;
@@ -332,7 +343,7 @@ main .content .main-content .mc-1 ul li:nth-child(3) {
 
 
 main .content .main-content .mc-2 {
-  font-family: 'Hindlight';
+  font-family: 'Hindlight', Arial, sans-serif;
   width: 382.5px;
   float: left;
 }
@@ -376,7 +387,7 @@ main .content .main-content .mc-3 ul li:nth-child(3) a {
 
 
 main .content .main-content .mc-3 {
-  font-family: 'Hindlight';
+  font-family: 'Hindlight', Arial, sans-serif;
   width:382.5px;
   float:left;
 }
@@ -496,7 +507,7 @@ ul,li,nav,div {
 }
 
 footer .content {
-  font-family: 'Hindlight';
+  font-family: 'Hindlight', Arial, sans-serif;
   font-size: 1.5rem;
   position:relative;
   min-height: 371px;
@@ -535,7 +546,7 @@ footer .content article h3 {
 }
 
 footer .content article .nathaliya-block {
-  font-family: 'MRS';
+  font-family: 'MRS', Arial, sans-serif;
   color: #f9f9fb;
   font-size: 4rem;
   height: 148px;
