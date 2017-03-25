@@ -16,10 +16,13 @@
 html,body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  /*height: 100%;*/
   min-width:1530px;
   font-size: 10px;
   box-sizing: border-box;
+}
+body {
+  background-color: #f9f9fb;
 }
 
 .content {
@@ -180,56 +183,74 @@ header {
 
 
 
-body {
-  background-color: #f9f9fb;
-}
 
 
 main {
-  width: 100%;
   margin-bottom:120px;
 }
 
 main .content {
-  margin-top: 318px;
+  margin-top: 290px;
 
 }
 
-main .content form{
+.sub-form {
+  padding: 25px 0;
+  max-height: 50px;
+  margin-bottom: 75px;  
   font-family: 'Monsterrat', Arial, sans-serif;
-  margin-bottom: 100px;
+  background-color: #f7f7f7;
+  border: 1px solid #f3f3f3;
+  border-top: none;
 }
 
-main .content form h2 {
-  display: inline-block;
+.sub-form h2 {
+  margin: 0;
+  margin: 0 -10px 0 28px;
+  float: left;
+  width: 240px;
+  height: 50px;
   color: #212121;
-  font-size: 2rem;
-  width:230px;
+  font-size: 2.1rem;
   text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 3px;
+  line-height: 25px;
 }
 
-main .content form input {
+.sub-form h2::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.sub-form input {
+  margin-right: 28px;
+  padding-left: 28px;
+  width: 425px;
+  height: 50px;
+  text-transform: uppercase;
+  border: 1px solid #f3f3f3;
+  letter-spacing: 1.5px;
   font-family: 'Monsterrat';
-  text-transform: uppercase;
-  border:1px solid #f3f3f3;
-  margin-right:28px;
-  height: 50px;
-  width: 450px;
-  padding-left: 20px; /*28 */
 }
-
-main .content form input:last-child {
-  width: 280px;
-  height: 50px;
+.sub-form input:nth-child(3) {
+  width: 410px;
+}
+.sub-form input:last-child {
   margin:0;
   padding:0;
+  width: 280px;
+  height: 50px;
   background-color: #212121;
-  color: white;
+  color: #ffffff;
 }
 
-main .content form input:last-child:hover {
-  cursor:crosshair;
+.sub-form input:last-child:hover {
+  cursor: pointer;
 }
+
+
 
 main .content .main-content {
   width:100%;
@@ -639,6 +660,7 @@ footer .copyright section nav {
 
 footer .copyright section nav a{
   font-size: 1.25rem;
+  font-size: 12.5pt;
   color: #929293;
   text-decoration: none;
   text-transform: uppercase;
