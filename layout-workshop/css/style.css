@@ -493,136 +493,170 @@ main .content .main-content .mc-4 ul li:nth-child(3) {
 
 footer {
   margin-top:-412px;
-  height: 412px;
   width: 100%;
+  height: 412px;
+  box-sizing: border-box;
   background-color: #212429;
   overflow: hidden;
-  box-sizing: border-box;
 }
 
-ul,li,nav,div {
+ul,
+li,
+nav,
+div {
   margin:0;
   padding:0;
   list-style-type: none;
 }
 
 footer .content {
-  font-family: 'Hindlight', Arial, sans-serif;
-  font-size: 1.5rem;
   position:relative;
   min-height: 371px;
-  color: white;  
+  color: #ffffff;  
+  font-family: 'Hindlight', Arial, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
 }
 
 footer .content article {
   margin-top:46px;
-  margin-right: 30px;
-  width: 360px;
+  margin-right: 20px;
   float:left;
+  width: 370px;
   overflow: hidden;
+}
+footer .content .first-block p {
+  margin: 0;
+  margin-bottom: 5px;
 }
 footer .content article:nth-child(4) {
   margin-right:0px;
-  
 }
 
 footer .content article::after {
-  content:'';
-  clear:both;
-  display:block;
-  overflow: hidden;
+  content: '';
+  display: block;
+  clear: both;
 }
 
 
 footer .content article h2 {
+  margin-bottom: 30px;
   font-family: 'Monsterrat';
-  font-size: 1.73rem;
-  margin-bottom:10px;
+  font-size: 1.5rem;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
-footer .content article h3 {
-  font-size: 1.6rem;
+footer .content article a {
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  color: inherit;
+  text-decoration: none;
+}
+footer .content article a::before {
+  content: '\f099';
+  font-family: "FontAwesome";
+}
+footer .content article a:hover {
+  color: #d7d7d7;
+}
+
+footer .content .tweets p {
+  margin: 7px 0px 25px 20px;
+  font-size: 1.65rem;
 }
 
 footer .content article .nathaliya-block {
+  position: relative;
+  width: 360px;
+  height: 148px;
+  background-color: #3a3c49;
   font-family: 'MRS', Arial, sans-serif;
   color: #f9f9fb;
-  font-size: 4rem;
-  height: 148px;
-  width: 360px;
-  background-color: #3a3c49;
-  position: relative;
+  font-size: 3.5rem;
 }
 
 footer .content article .nathaliya-block p{
   position: absolute;
-  left: 45%;
-  top: 30%;
+  left: 46%;
+  top: 60%;
   transform: rotate(-10deg)
 }
 
 footer .content .instagram {
-  width: 360px;
+  margin-left: 0px;
+  width: 370px;
+  box-sizing: border-box;
 }
 
 footer .content article .intagram-photo {
+  margin:2px;
   display: block;
   float:left;
   width:118px;
   height:98px;
-  margin:1px;
-  background-color: white
+  background-color: #ffffff;
 }
 
-footer .content article .intagram-photo:hover {
-  box-sizing: border-box;
-  border: 10px solid #0442a9;
+.content .intagram-photo:hover {
+  background-color:  #d7d7d7;
 }
+footer .content .comments {
+  width: 360px;
+}
+
+footer .content .comments h3{
+  font-size: 1.4rem;
+}
+footer .content .comments p {
+  margin: 0;
+  margin-bottom: 45px;
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+}
+
 
 footer .copyright {
   width:100%;
-  height:41px;
+  max-height:41px;
   background-color: #17191c; 
 }
 
 footer .copyright section {
-  
-  width:1350px;
-  height:41px;
   margin: 0 auto;
+  width:1350px;
+  max-height:41px;
 }
 
 footer .copyright section nav {
-  overflow: hidden;
   margin: 0 auto;
-  width:900px;
-  line-height: 3;
+  box-sizing: border-box;
+  width: max-content;
+  line-height: 41px;
 
 }
 
 footer .copyright section nav a{
-  font-size: 1.5rem;
-  margin:0 20px;
+  font-size: 1.25rem;
   color: #929293;
   text-decoration: none;
   text-transform: uppercase;
-  text-align: center;
+  letter-spacing: 1.5px;
 }
 
-footer .copyright section nav a:nth-child(2):hover {
-  color: white;
-}
-footer .copyright section nav a:nth-child(3):hover {
-  color: white;
+footer .copyright section nav a:not(:nth-child(1)):hover {
+  color: #ffffff;
 }
 
-footer .copyright section nav a::after {
+footer .copyright section nav a:not(:nth-child(3)) {
+  margin-right: 30px;
+}
+footer .copyright section nav a:not(:nth-child(3))::after {
+  position: absolute;
+  margin-left: 15px;
   content: '|';
-  padding-left: 40px; 
 }
-
-footer .copyright section nav a:last-child::after {
-  content: ''; 
+footer .copyright section nav a:hover::after {
+  color: #929293;
 }
-
