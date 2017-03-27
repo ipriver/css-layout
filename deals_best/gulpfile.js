@@ -3,9 +3,9 @@ const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const htmlmin = require('gulp-htmlmin');
- 
+const imagemin = require('gulp-imagemin');
 
-gulp.task('minify', function() {
+gulp.task('minify-html', function() {
   return gulp.src('src/*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('dist'));
@@ -29,15 +29,18 @@ gulp.task('css-prefix', () =>
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('src/styles/'))
-        
+        .pipe(gulp.dest('src/styles/'));
 );
-
-gulp.task('prefmin', ['css-prefix'], function() {
-	gulp.start('minify-css');
-});
+ 
+gulp.task('img-compr', () =>
+    gulp.src('src/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/images'))
+);
 
 gulp.task('watch', function() {
   gulp.watch('src/styles/**/*.scss', ['sass']);
   gulp.watch('src/styles/**/*.css',  ['css-prefix', 'minify-css']);
+  gulp.watch('src/images/*', ['img-compr']);
+  gulp.watch('src/*.html', ['minify-html']);
 });
