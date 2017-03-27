@@ -1,0 +1,177 @@
+@import url('reset.css');
+
+@font-face {
+    font-family: Myriad Pro;
+    src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+body {
+	box-sizing: border-box;
+	height: 2000px;
+	font-family: Myriad Pro;
+	font-size: 0.82em;
+	color: #333333;
+}
+
+header,
+.hed {
+	font-size: 1.64em;
+}
+
+main {
+	position:relative;
+	top: 20px;
+	left: 0;
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 519px;
+	height: 745px;
+	max-width: 519px;
+	max-height: 745px;
+}
+
+.orange-page, 
+.green-page, 
+.blue-page {
+	position: absolute;
+	box-sizing: border-box;
+	width: 519px;
+	height: 745px;
+	max-width: 519px;
+	max-height: 745px;
+	border: solid 1.5px black;
+}
+
+.orange-page {
+	z-index:3;
+	background-color: #ebebeb;
+}
+
+.green-page {
+	z-index: 2;
+	margin: 19px 0 0 19px; 
+	background-color: #cccccc;
+}
+
+.blue-page {
+	z-index: 1;
+	margin: 38px 0 0 38px;
+	background-color: #acacac; 
+}
+
+.marker {
+	position: relative;
+	margin: 19px 0 0 0;
+	float: right;
+	width: 106.5px;
+	height: 30.5px;
+	background-color: red;
+	border: solid 1.5px black;
+	border-radius: 0 8px 8px 0;
+}
+
+.orange-page .marker{
+	right: -80px;
+	margin-left: -80px;
+	background-color: #f68e56;
+}
+
+.green-page .marker{
+	right: -50px;
+	margin-left: -50px;
+	background-color: #39b54a;
+}
+
+.blue-page .marker{
+	right: -20px;
+	margin-left: -20px;
+	background-color: #00aeef;
+}
+
+.css-photos {
+	padding-top: 10px;
+	float: left;
+}
+
+.css-photos:nth-child(2n) {
+	float: right;
+}
+
+.links-box {
+	position: fixed;
+	right: 0;
+	bottom: 20px;
+	z-index: 10;
+	width: 86px;
+	height: 68px;
+	border: solid 1.5px black;
+	background-color: #fbaf5d;
+	
+}
+
+.links-box .hed {
+	padding: 10px 0;
+	text-align: center;
+	font-size: 1.1rem;
+}
+
+.links-box nav ul a {
+	float: left;
+	margin-left: 5.5px;
+}
+
+.css-jokes article img {
+	float: left;
+}
+
+.css-jokes article img:nth-child(2n) {
+	float: right;
+}
+
+.text-block, .css-jokes {
+	margin: 30px;
+}
+
+.text-block .hed h2,
+.css-jokes .hed h2 {
+	padding-top: 10px;
+}
+
+.text-block article img:first-child{
+	margin: 0 20px 10px 0;
+}
+
+.text-block article p {
+	padding-top: 10px;
+}
+
+.text-block article p:nth-of-type(2) {
+	padding-top: 0px;
+}
+
+.css-jokes {
+	margin-top: 40px;
+}
+
+.css-jokes .hed{
+	padding-bottom: 17px;
+}
+
+.css-jokes article img{
+	margin: 7.5px 0;
+}
+
+.css-jokes p{
+	display: inline-block;
+	margin: 20px 0;
+	text-align: center;
+	font-size: 0.75em;
+}
+
+/* FOR IE8+ */
+html, div, map, dt, isindex, form {
+    display: block;
+}
+header, nav, article, footer, address { 
+    display: block; 
+}
