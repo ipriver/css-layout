@@ -1,0 +1,74 @@
+@import reset
+
+@font-face
+    font-family: helveticaLT
+    src: url(./fonts/helvetica-light.ttf)
+@font-face
+    font-family: helveticaNeueRoman
+    src: url(./fonts/HelveticaNeue-Roman.ttf)
+
+body
+	display: flex
+	flex-direction: column
+	
+header
+	display: flex
+	flex-direction: column
+
+	background-color: red
+	.user-basket
+		width:  430px
+		align-self: flex-end
+		align-items: center
+		justify-content: flex-end
+		display: flex
+		background-color: pink
+		a
+			color: #ffffff
+			text-decoration: none
+		a:nth-child(1):after
+			margin: 0 18px
+			content: '|'
+		a:nth-child(2)
+			margin-right: 30px
+		.price-checkout
+			width: 250px
+			height: 50px
+			display: flex
+			justify-content: space-between
+			align-items: center
+			border-radius: 5px
+			background-color: #ffffff
+			img
+				margin-left: 15px
+			p
+				font-family: helveticaLT
+				font-size: 1.5em
+				color: #4d4d4d
+			button
+				margin-right: 15px
+				width: 87px
+				height: 25px
+				color: #ffffff
+				font-family: helveticaNeueRoman
+				font-size: 1.1em
+				border: none
+				border-radius: 5px
+				background-color: #195391
+
+			
+			
+	nav
+		align-self: center
+		
+
+
+main
+	background-color: blue
+	
+
+footer
+	background-color: green
+
+
+
