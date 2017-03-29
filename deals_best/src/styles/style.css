@@ -1,4 +1,119 @@
-.user-basket {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: helveticaLT;
+  src: url(./fonts/helvetica-light.ttf); }
+
+@font-face {
+  font-family: helveticaNeueRoman;
+  src: url(./fonts/HelveticaNeue-Roman.ttf); }
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
   background-color: red; }
-  .user-basket .price-checkout {
-    background-color: blue; }
+  header .user-basket {
+    width: 430px;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: pink; }
+    header .user-basket a {
+      color: #ffffff;
+      text-decoration: none; }
+    header .user-basket a:nth-child(1):after {
+      margin: 0 18px;
+      content: '|'; }
+    header .user-basket a:nth-child(2) {
+      margin-right: 30px; }
+    header .user-basket .price-checkout {
+      width: 250px;
+      height: 50px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-align: center;
+      align-items: center;
+      border-radius: 5px;
+      background-color: #ffffff; }
+      header .user-basket .price-checkout img {
+        margin-left: 15px; }
+      header .user-basket .price-checkout p {
+        font-family: helveticaLT;
+        font-size: 1.5em;
+        color: #4d4d4d; }
+      header .user-basket .price-checkout button {
+        margin-right: 15px;
+        width: 87px;
+        height: 25px;
+        color: #ffffff;
+        font-family: helveticaNeueRoman;
+        font-size: 1.1em;
+        border: none;
+        border-radius: 5px;
+        background-color: #195391; }
+  header nav {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center; }
+
+main {
+  background-color: blue; }
+
+footer {
+  background-color: green; }
