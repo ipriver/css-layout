@@ -5,30 +5,36 @@
     src: url(./fonts/helvetica-light.ttf)
 @font-face
     font-family: helveticaNeueRoman
-    src: url(./fonts/HelveticaNeue-Roman.ttf)
-
+    src: url(./fonts/HelveticaNeue-Roman.ttf)	
+@font-face
+    font-family:helveticaLT-Bold
+    src: url(./fonts/helvetica-lt-bold.ttf)
 body
 	display: flex
 	flex-direction: column
 	
 header
+	padding: 20px 20px 0 20px
 	display: flex
 	flex-direction: column
-
-	background-color: red
+	background-color: #286aaf
 	.user-basket
+		margin-bottom: 20px
+		display: flex
 		width:  430px
 		align-self: flex-end
 		align-items: center
-		justify-content: flex-end
-		display: flex
-		background-color: pink
+		justify-content: flex-end	
 		a
 			color: #ffffff
 			text-decoration: none
+		a:hover
+			color: #17508e
 		a:nth-child(1):after
 			margin: 0 18px
-			content: '|'
+			content: '|'																										
+		a:nth-child(1:hover:after
+			color: #17508e																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																										
 		a:nth-child(2)
 			margin-right: 30px
 		.price-checkout
@@ -55,13 +61,43 @@ header
 				border: none
 				border-radius: 5px
 				background-color: #195391
-
-			
-			
+			button:hover
+				cursor: pointer		
 	nav
+		$navFontSize: 1em
 		align-self: center
+		display: flex
 		
-
+		label
+			width: 145px
+			height: 35px
+			display: flex
+			align-items: center
+			justify-content: center
+			color: #ffffff
+			font-family: helveticaLT-Bold
+			font-size: $navFontSize
+			cursor: pointer
+			background-color: #c9c9c9
+		label:first-of-type
+			border-radius: 10px 0 0 0
+		label:last-of-type
+			border-radius: 0 10px 0 0
+		input
+			display: none
+			&:checked + label
+				background-color: #1a5492	
+		select
+			margin-left: 45px
+			background-color: transparent
+			border: none
+			font-family: helveticaNeueRoman
+			color: #ffffff
+			font-size: $navFontSize			
+			option
+				font-family: inherit
+				color: inherit
+				background-color: #3c7bbd
 
 main
 	background-color: blue
