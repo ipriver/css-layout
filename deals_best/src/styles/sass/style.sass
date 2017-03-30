@@ -14,9 +14,29 @@
     src: url(./fonts/helvetica-ce-regular.ttf)    
 
 $marLR: 45px
+
 =content-margin($marLR)
 	margin: 0 $marLR
 
+=blue-buttons
+		color: #ffffff
+		font-family: helveticaNeueRoman
+		border: none
+		border-radius: 5px
+		background: linear-gradient(0deg, #195391, #4284c9)
+		&:hover
+			background: linear-gradient(0deg, #195390, #6ea1d7)
+			cursor: pointer
+
+
+.deal-info
+	display: flex
+	align-items: center
+	justify-content: space-around
+	font-family: helveticaLT-Bold
+	& > div
+		p:nth-child(2)
+			font-size: 1.7em
 html
 	box-sizing: border-box;    
 body
@@ -31,7 +51,7 @@ header
 	background-color: #286aaf	
 	.logo
 		position: absolute
-		margin-left: -$marLR
+		margin-left: -$marLR - 20px
 	.user-basket
 		margin-bottom: 20px
 		display: flex
@@ -69,16 +89,12 @@ header
 				margin-right: 15px
 				width: 87px
 				height: 25px
-				color: #ffffff
-				font-family: helveticaNeueRoman
+				+blue-buttons
 				font-size: 1.1em
-				border: none
-				border-radius: 5px
-				background: linear-gradient(0deg, #195391, #4284c9)
 				
-			button:hover
-				background: linear-gradient(0deg, #195390, #6ea1d7)
-				cursor: pointer		
+				
+			
+						
 	nav
 		$navFontSize: 1em
 		align-self: center
@@ -105,6 +121,8 @@ header
 				box-sizing: border-box
 				border: 1px solid #90b5dd
 				background: linear-gradient(0deg, #195390, #6ea1d7)
+		
+
 		select
 			margin-left: 45px
 			background-color: transparent
@@ -119,7 +137,142 @@ header
 
 main
 	+content-margin($marLR)
-	background-color: blue
+	display: flex
+	flex-direction: row
+
+	iframe
+		display: none
+	.left
+		display: flex
+		flex-direction: column
+		min-width: 290px
+		height: 900px
+		.hot-deal
+			color: #ffffff
+			.deal-info
+				height: 95px
+				
+				font-size: 1.1em
+				background: linear-gradient(270deg, #185698, #347ac7)
+				
+					
+					
+			.time-left
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: space-around
+				background-color: #10447b
+				p:nth-child(1)
+					margin-top: 10px
+				p:nth-child(2)
+					margin: 15px 0
+					font-size: 1.7em
+			.date-names
+				display: flex
+				height: 30px
+				align-items: center
+				justify-content: center
+				font-size: 0.7em
+				background: linear-gradient(270deg, #185698, #347ac7)
+				& > p
+					margin-right: 17px
+					font-size: 1.2em
+
+			.buy
+				display: flex
+				flex-direction: column
+				background-color: #134a85
+				align-items: center
+				.price
+					margin: 30px 0
+					font-size: 3em
+				.buy-now
+					display: flex
+					align-items: center
+					justify-content: center
+					height: 90px
+					width: 290px
+					background-color: #dccf0e
+					button
+						+blue-buttons
+						width: 210px
+						height: 50px
+						font-size: 1.5em
+				.recomend
+					display: flex
+					flex-direction: column
+					align-items: center
+					p
+						flex-grow: 1
+					ul li
+						margin: 20px 10px
+						display: inline-block
+						&:hover
+							box-shadow: 0 0 1em #ffffff;
+	
+	
+
+	.content
+		flex-grow: 1
+		min-width: 520px
+		height: 400px
+		background-color: green
+		article
+			
+			
+			background-color: #fff
+			display: none
+			min-height: 200px
+			border-top: 5px solid #e74c3c
+			
+	.right
+		display: flex
+		flex-direction: column
+		min-width: 260px
+		
+		background-color: #ffffff
+		h2
+			color: #195390
+			font-size: 1.4em
+		.deal
+			&:after
+				content: ''
+				display: block
+				margin: 0 auto
+				width: 220px
+				border-bottom: 1px solid #dedede
+			.title
+				margin-top: 20px
+				color: #1f63ad
+				font-size: 1.2em
+			.deal-info
+				margin: 20px 0
+				color: #1f63ad
+
+				& > div
+					p:nth-child(2)
+						font-size: 1.2em
+						color: #2e2b2b
+			.deal-descr
+				margin-bottom: 20px
+				display: flex
+				align-items: center
+				justify-content: center
+				.photo
+					margin-right: 15px
+					width: 95px
+					height: 70px
+					background-color: #ededed
+				.timer
+					p
+						margin: 7px 0
+						color: #767676
+					.timer-timer
+						margin: 0
+						color: #2e2b2b
+
+
 	
 
 footer
