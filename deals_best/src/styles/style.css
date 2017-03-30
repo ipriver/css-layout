@@ -50,21 +50,34 @@ table {
   src: url(./fonts/HelveticaNeue-Roman.ttf); }
 
 @font-face {
+  font-family: helveticaLT-Bold;
   src: url(./fonts/helvetica-lt-bold.ttf); }
+
+@font-face {
+  font-family: helveticaRegular;
+  src: url(./fonts/helvetica-ce-regular.ttf); }
+
+html {
+  box-sizing: border-box; }
 
 body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #286aaf; }
 
 header {
   padding: 20px 20px 0 20px;
+  margin: 0 45px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #286aaf; }
+  header .logo {
+    position: absolute;
+    margin-left: -45px; }
   header .user-basket {
     margin-bottom: 20px;
     display: -ms-flexbox;
@@ -84,8 +97,8 @@ header {
     header .user-basket a:nth-child(1):after {
       margin: 0 18px;
       content: '|'; }
-    header .user-basket a:hover:after {
-      color: #17508e; }
+    header .user-basket a:nth-child(1):hover:after {
+      color: #ffffff; }
     header .user-basket a:nth-child(2) {
       margin-right: 30px; }
     header .user-basket .price-checkout {
@@ -114,8 +127,9 @@ header {
         font-size: 1.1em;
         border: none;
         border-radius: 5px;
-        background-color: #195391; }
+        background: linear-gradient(0deg, #195391, #4284c9); }
       header .user-basket .price-checkout button:hover {
+        background: linear-gradient(0deg, #195390, #6ea1d7);
         cursor: pointer; }
   header nav {
     -ms-flex-item-align: center;
@@ -135,7 +149,7 @@ header {
       font-family: helveticaLT-Bold;
       font-size: 1em;
       cursor: pointer;
-      background-color: #c9c9c9; }
+      background: linear-gradient(0deg, #c9c9c9, #fdfdfd); }
     header nav label:first-of-type {
       border-radius: 10px 0 0 0; }
     header nav label:last-of-type {
@@ -143,7 +157,9 @@ header {
     header nav input {
       display: none; }
       header nav input:checked + label {
-        background-color: #1a5492; }
+        box-sizing: border-box;
+        border: 1px solid #90b5dd;
+        background: linear-gradient(0deg, #195390, #6ea1d7); }
     header nav select {
       margin-left: 45px;
       background-color: transparent;
@@ -157,7 +173,30 @@ header {
         background-color: #3c7bbd; }
 
 main {
+  margin: 0 45px;
   background-color: blue; }
 
 footer {
-  background-color: green; }
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 45px;
+  display: -ms-flexbox;
+  display: flex;
+  height: 53px;
+  font-family: helveticaRegular;
+  font-size: 0.8em;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  color: #ffffff; }
+  footer p {
+    margin: auto; }
+  footer ul > li {
+    display: inline-block; }
+    footer ul > li:not(:last-child) {
+      margin-right: 8px; }
+    footer ul > li:hover {
+      background-color: #17508e; }
