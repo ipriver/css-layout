@@ -57,6 +57,10 @@ table {
   font-family: helveticaRegular;
   src: url(./fonts/helvetica-ce-regular.ttf); }
 
+@font-face {
+  font-family: Exo-Bold;
+  src: url(./fonts/Exo-DemiBold-webfont.ttf); }
+
 .deal-info {
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +68,7 @@ table {
   align-items: center;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  font-family: helveticaLT-Bold; }
+  font-family: helveticaLT-Bold, Arial, sans-serif; }
   .deal-info > div p:nth-child(2) {
     font-size: 1.7em; }
 
@@ -76,7 +80,10 @@ body {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  background-color: #286aaf; }
+  background-color: #10447b;
+  background-image: url("../images/bg.png"), url("../images/bg-rp.png");
+  background-repeat: no-repeat, repeat-x;
+  font-family: helveticaNeueRoman, Arial, sans-serif; }
 
 header {
   padding: 20px 20px 0 20px;
@@ -84,8 +91,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-  flex-direction: column;
-  background-color: #286aaf; }
+  flex-direction: column; }
   header .logo {
     position: absolute;
     margin-left: -65px; }
@@ -113,20 +119,20 @@ header {
     header .user-basket a:nth-child(2) {
       margin-right: 30px; }
     header .user-basket .price-checkout {
-      width: 250px;
-      height: 50px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: justify;
       justify-content: space-between;
       -ms-flex-align: center;
       align-items: center;
+      width: 250px;
+      height: 50px;
       border-radius: 5px;
       background-color: #ffffff; }
       header .user-basket .price-checkout img {
         margin-left: 15px; }
       header .user-basket .price-checkout p {
-        font-family: helveticaLT;
+        font-family: helveticaLT, Arial, sans-serif;
         font-size: 1.5em;
         color: #4d4d4d; }
       header .user-basket .price-checkout button {
@@ -134,7 +140,7 @@ header {
         width: 87px;
         height: 25px;
         color: #ffffff;
-        font-family: helveticaNeueRoman;
+        font-family: helveticaNeueRoman, Arial, sans-serif;
         border: none;
         border-radius: 5px;
         background: linear-gradient(0deg, #195391, #4284c9);
@@ -143,21 +149,21 @@ header {
           background: linear-gradient(0deg, #195390, #6ea1d7);
           cursor: pointer; }
   header nav {
-    -ms-flex-item-align: center;
-    align-self: center;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-item-align: center;
+    align-self: center; }
     header nav label {
-      width: 145px;
-      height: 35px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-align: center;
       align-items: center;
       -ms-flex-pack: center;
       justify-content: center;
+      width: 145px;
+      height: 35px;
       color: #ffffff;
-      font-family: helveticaLT-Bold;
+      font-family: helveticaLT-Bold, Arial, sans-serif;
       font-size: 1em;
       cursor: pointer;
       background: linear-gradient(0deg, #c9c9c9, #fdfdfd); }
@@ -175,7 +181,7 @@ header {
       margin-left: 45px;
       background-color: transparent;
       border: none;
-      font-family: helveticaNeueRoman;
+      font-family: helveticaNeueRoman, Arial, sans-serif;
       color: #ffffff;
       font-size: 1em; }
       header nav select option {
@@ -188,22 +194,22 @@ main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
-  flex-direction: row; }
-  main iframe {
-    display: none; }
+  flex-direction: row;
+  background-color: #ffffff; }
   main .left {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    min-width: 290px;
-    height: 900px; }
+    min-width: 290px; }
     main .left .hot-deal {
       color: #ffffff; }
       main .left .hot-deal .deal-info {
         height: 95px;
         font-size: 1.1em;
         background: linear-gradient(270deg, #185698, #347ac7); }
+        main .left .hot-deal .deal-info span {
+          font-weight: bold; }
       main .left .hot-deal .time-left {
         display: -ms-flexbox;
         display: flex;
@@ -218,15 +224,16 @@ main {
           margin-top: 10px; }
         main .left .hot-deal .time-left p:nth-child(2) {
           margin: 15px 0;
-          font-size: 1.7em; }
+          font-size: 1.7em;
+          font-family: Exo-Bold, Arial, sans-serif; }
       main .left .hot-deal .date-names {
         display: -ms-flexbox;
         display: flex;
-        height: 30px;
         -ms-flex-align: center;
         align-items: center;
         -ms-flex-pack: center;
         justify-content: center;
+        height: 30px;
         font-size: 0.7em;
         background: linear-gradient(270deg, #185698, #347ac7); }
         main .left .hot-deal .date-names > p {
@@ -242,7 +249,9 @@ main {
         align-items: center; }
         main .left .hot-deal .buy .price {
           margin: 30px 0;
-          font-size: 3em; }
+          font-size: 3em;
+          font-family: helveticaLT-Bold, Arial, sans-serif;
+          font-weight: bold; }
         main .left .hot-deal .buy .buy-now {
           display: -ms-flexbox;
           display: flex;
@@ -250,18 +259,22 @@ main {
           align-items: center;
           -ms-flex-pack: center;
           justify-content: center;
-          height: 90px;
           width: 290px;
+          height: 88px;
           background-color: #dccf0e; }
+          main .left .hot-deal .buy .buy-now img {
+            position: absolute;
+            left: 0; }
           main .left .hot-deal .buy .buy-now button {
             color: #ffffff;
-            font-family: helveticaNeueRoman;
+            font-family: helveticaNeueRoman, Arial, sans-serif;
             border: none;
             border-radius: 5px;
             background: linear-gradient(0deg, #195391, #4284c9);
             width: 210px;
             height: 50px;
-            font-size: 1.5em; }
+            font-size: 2em;
+            font-family: helveticaLT-Bold, Arial, sans-serif; }
             main .left .hot-deal .buy .buy-now button:hover {
               background: linear-gradient(0deg, #195390, #6ea1d7);
               cursor: pointer; }
@@ -273,34 +286,90 @@ main {
           -ms-flex-align: center;
           align-items: center; }
           main .left .hot-deal .buy .recomend p {
+            margin-top: 20px;
             -ms-flex-positive: 1;
-            flex-grow: 1; }
+            flex-grow: 1;
+            font-weight: 1.2em; }
           main .left .hot-deal .buy .recomend ul li {
             margin: 20px 10px;
             display: inline-block; }
             main .left .hot-deal .buy .recomend ul li:hover {
               box-shadow: 0 0 1em #ffffff; }
+    main .left .fb {
+      margin-top: 10px; }
   main .content {
     -ms-flex-positive: 1;
     flex-grow: 1;
-    min-width: 520px;
-    height: 400px;
-    background-color: green; }
+    min-width: 520px; }
     main .content article {
-      background-color: #fff;
-      display: none;
-      min-height: 200px;
-      border-top: 5px solid #e74c3c; }
+      padding: 30px;
+      color: #5e5e5e;
+      background-color: #ffffff; }
+      main .content article h2 {
+        margin: 10px 0;
+        color: #195390;
+        font-size: 1.5em;
+        font-weight: bold; }
+      main .content article img {
+        float: left;
+        margin: 0 20px 20px 0; }
+        main .content article img:after {
+          content: '';
+          display: block;
+          clear: both; }
+      main .content article p {
+        margin-top: 30px; }
+      main .content article .address {
+        margin: 25px 0;
+        display: -ms-flexbox;
+        display: flex; }
+        main .content article .address .adr-img {
+          min-width: 250px;
+          min-height: 170px;
+          background-color: #ededed;
+          border: 2px solid #d8d4d4; }
+        main .content article .address .p-a {
+          margin-left: 20px;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-direction: column;
+          flex-direction: column; }
+          main .content article .address .p-a h2 {
+            font-size: 1.2em;
+            color: inherit; }
+          main .content article .address .p-a p {
+            margin: 0; }
+          main .content article .address .p-a .phone {
+            margin-bottom: 10px; }
+            main .content article .address .p-a .phone p {
+              font-size: 1.4em;
+              font-weight: bold;
+              color: black; }
+          main .content article .address .p-a .adr img {
+            float: left; }
+          main .content article .address .p-a .adr:after {
+            content: '';
+            display: block;
+            clear: both; }
   main .right {
+    position: relative;
+    padding-left: 20px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
     min-width: 260px;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    border-left: 2px solid #dedede; }
+    main .right .ygol {
+      position: absolute;
+      right: 0;
+      top: 0; }
     main .right h2 {
+      margin-top: 30px;
       color: #195390;
-      font-size: 1.4em; }
+      font-size: 1.4em;
+      font-weight: bold; }
     main .right .deal:after {
       content: '';
       display: block;
@@ -338,7 +407,7 @@ main {
         color: #2e2b2b; }
 
 footer {
-  position: absolute;
+  position: relative;
   left: 0;
   bottom: 0;
   right: 0;
@@ -346,7 +415,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   height: 53px;
-  font-family: helveticaRegular;
+  font-family: helveticaRegular, Arial, sans-serif;
   font-size: 0.8em;
   -ms-flex-align: center;
   align-items: center;

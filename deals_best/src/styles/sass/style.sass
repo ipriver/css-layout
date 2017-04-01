@@ -12,6 +12,9 @@
 @font-face
     font-family: helveticaRegular
     src: url(./fonts/helvetica-ce-regular.ttf)    
+@font-face
+    font-family: Exo-Bold
+    src: url(./fonts/Exo-DemiBold-webfont.ttf) 
 
 $marLR: 45px
 
@@ -20,7 +23,7 @@ $marLR: 45px
 
 =blue-buttons
 		color: #ffffff
-		font-family: helveticaNeueRoman
+		font-family: helveticaNeueRoman, Arial, sans-serif
 		border: none
 		border-radius: 5px
 		background: linear-gradient(0deg, #195391, #4284c9)
@@ -28,27 +31,29 @@ $marLR: 45px
 			background: linear-gradient(0deg, #195390, #6ea1d7)
 			cursor: pointer
 
-
 .deal-info
 	display: flex
 	align-items: center
 	justify-content: space-around
-	font-family: helveticaLT-Bold
+	font-family: helveticaLT-Bold, Arial, sans-serif
 	& > div
 		p:nth-child(2)
 			font-size: 1.7em
+
 html
 	box-sizing: border-box;    
 body
 	display: flex
 	flex-direction: column
-	background-color: #286aaf
+	background-color: #10447b
+	background-image: url("../images/bg.png"), url("../images/bg-rp.png")
+	background-repeat: no-repeat, repeat-x
+	font-family: helveticaNeueRoman, Arial, sans-serif
 header
 	padding: 20px 20px 0 20px
 	+content-margin($marLR)
 	display: flex
 	flex-direction: column
-	background-color: #286aaf	
 	.logo
 		position: absolute
 		margin-left: -$marLR - 20px
@@ -72,17 +77,17 @@ header
 		a:nth-child(2)
 			margin-right: 30px
 		.price-checkout
-			width: 250px
-			height: 50px
 			display: flex
 			justify-content: space-between
 			align-items: center
+			width: 250px
+			height: 50px
 			border-radius: 5px
 			background-color: #ffffff
 			img
 				margin-left: 15px
 			p
-				font-family: helveticaLT
+				font-family: helveticaLT, Arial, sans-serif
 				font-size: 1.5em
 				color: #4d4d4d
 			button
@@ -91,23 +96,19 @@ header
 				height: 25px
 				+blue-buttons
 				font-size: 1.1em
-				
-				
-			
-						
+										
 	nav
 		$navFontSize: 1em
+		display: flex	
 		align-self: center
-		display: flex
-		
 		label
-			width: 145px
-			height: 35px
 			display: flex
 			align-items: center
 			justify-content: center
+			width: 145px
+			height: 35px
 			color: #ffffff
-			font-family: helveticaLT-Bold
+			font-family: helveticaLT-Bold, Arial, sans-serif
 			font-size: $navFontSize
 			cursor: pointer
 			background: linear-gradient(0deg, #c9c9c9, #fdfdfd)
@@ -121,13 +122,11 @@ header
 				box-sizing: border-box
 				border: 1px solid #90b5dd
 				background: linear-gradient(0deg, #195390, #6ea1d7)
-		
-
 		select
 			margin-left: 45px
 			background-color: transparent
 			border: none
-			font-family: helveticaNeueRoman
+			font-family: helveticaNeueRoman, Arial, sans-serif
 			color: #ffffff
 			font-size: $navFontSize			
 			option
@@ -139,24 +138,19 @@ main
 	+content-margin($marLR)
 	display: flex
 	flex-direction: row
-
-	iframe
-		display: none
+	background-color: #ffffff
 	.left
 		display: flex
 		flex-direction: column
 		min-width: 290px
-		height: 900px
 		.hot-deal
 			color: #ffffff
 			.deal-info
 				height: 95px
-				
 				font-size: 1.1em
 				background: linear-gradient(270deg, #185698, #347ac7)
-				
-					
-					
+				span
+					font-weight: bold	
 			.time-left
 				display: flex
 				flex-direction: column
@@ -168,17 +162,17 @@ main
 				p:nth-child(2)
 					margin: 15px 0
 					font-size: 1.7em
+					font-family: Exo-Bold, Arial, sans-serif
 			.date-names
 				display: flex
-				height: 30px
 				align-items: center
 				justify-content: center
+				height: 30px
 				font-size: 0.7em
 				background: linear-gradient(270deg, #185698, #347ac7)
 				& > p
 					margin-right: 17px
 					font-size: 1.2em
-
 			.buy
 				display: flex
 				flex-direction: column
@@ -187,54 +181,107 @@ main
 				.price
 					margin: 30px 0
 					font-size: 3em
+					font-family: helveticaLT-Bold, Arial, sans-serif
+					font-weight: bold
 				.buy-now
 					display: flex
 					align-items: center
 					justify-content: center
-					height: 90px
 					width: 290px
+					height: 88px
 					background-color: #dccf0e
+					img
+						position: absolute
+						left: 0
 					button
 						+blue-buttons
 						width: 210px
 						height: 50px
-						font-size: 1.5em
+						font-size: 2em
+						font-family: helveticaLT-Bold, Arial, sans-serif
 				.recomend
 					display: flex
 					flex-direction: column
 					align-items: center
 					p
+						margin-top: 20px
 						flex-grow: 1
+						font-weight: 1.2em
 					ul li
 						margin: 20px 10px
 						display: inline-block
 						&:hover
 							box-shadow: 0 0 1em #ffffff;
-	
-	
-
+		.fb
+			margin-top: 10px
 	.content
 		flex-grow: 1
 		min-width: 520px
-		height: 400px
-		background-color: green
 		article
-			
-			
-			background-color: #fff
-			display: none
-			min-height: 200px
-			border-top: 5px solid #e74c3c
-			
+			padding: 30px
+			color: #5e5e5e
+			background-color: #ffffff
+			h2
+				margin: 10px 0
+				color: #195390
+				font-size: 1.5em
+				font-weight: bold
+			img
+				float: left
+				margin: 0 20px 20px 0
+				&:after
+					content: ''
+					display: block
+					clear: both
+			p
+				margin-top: 30px
+			.address
+				margin: 25px 0
+				display: flex
+				.adr-img
+					min-width: 250px
+					min-height: 170px
+					background-color: #ededed
+					border: 2px solid #d8d4d4
+				.p-a
+					margin-left: 20px
+					display: flex
+					flex-direction: column
+					h2
+						font-size: 1.2em
+						color: inherit
+					p
+						margin: 0
+					.phone
+						margin-bottom: 10px
+						p
+							font-size: 1.4em
+							font-weight: bold
+							color: black
+					.adr
+						img
+							float: left
+						&:after
+							content: ''
+							display: block
+							clear: both		
 	.right
+		position: relative
+		padding-left: 20px
 		display: flex
 		flex-direction: column
 		min-width: 260px
-		
 		background-color: #ffffff
+		border-left: 2px solid #dedede
+		.ygol
+			position: absolute
+			right: 0
+			top: 0
 		h2
+			margin-top: 30px
 			color: #195390
 			font-size: 1.4em
+			font-weight: bold
 		.deal
 			&:after
 				content: ''
@@ -249,7 +296,6 @@ main
 			.deal-info
 				margin: 20px 0
 				color: #1f63ad
-
 				& > div
 					p:nth-child(2)
 						font-size: 1.2em
@@ -272,18 +318,15 @@ main
 						margin: 0
 						color: #2e2b2b
 
-
-	
-
 footer
-	position: absolute
+	position: relative
 	left: 0
 	bottom: 0
 	right: 0
 	+content-margin($marLR)
 	display: flex
 	height: 53px
-	font-family: helveticaRegular
+	font-family: helveticaRegular, Arial, sans-serif
 	font-size: 0.8em
 	align-items: center
 	justify-content: flex-end
