@@ -1,0 +1,27 @@
+{
+  "name": "auto_service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipriver/css-layout.git"
+  },
+  "author": "ipriver",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ipriver/css-layout/issues"
+  },
+  "homepage": "https://github.com/ipriver/css-layout#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
