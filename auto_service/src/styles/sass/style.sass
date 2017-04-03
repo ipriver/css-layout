@@ -1,21 +1,69 @@
 @import reset
 
-$footerHeight: 85px
+@font-face
+  font-family: segoe-ui-semibold
+  src: url(../fonts/segoe-ui-semibold.ttf)
+@font-face
+  font-family: segoe-ui-bold
+  src: url(../fonts/segoe-ui-bold.ttf)
+@font-face
+  font-family: segoe-ui
+  src: url(../fonts/segoe-ui.ttf)  
 
+$footerHeight: 85px + 2px
+
+.navigation
+  display: flex
+  justify-content: center
+  align-items: center
+  a
+    text-transform: uppercase
+    font-family: segoe-ui-semibold, Arial, sans-serif
+    color: #848484
+    text-decoration: none
+    &:hover
+      color: #ffbc65
+
+.phone
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  h2
+    text-transform: uppercase
+    font-family: segoe-ui, Arial, sans-serif
+    color: #2c2c2c
+  p
+
+    font-family: segoe-ui-bold, Arial, sans-serif
+    color: #bfbfbf
+    span
+      color: #e18711
 html
-	height: 100%;
-	box-sizing: border-box;
+  height: 100%;
+  box-sizing: border-box;
 
 body
-	position: relative
-	min-height: 100%
-	padding-bottom: -$footerHeight
+  position: relative
+  margin: 0 auto
+  min-height: 100%
+  width: 1280px
+  padding-bottom: $footerHeight
+
 
 header
-	background-color: #ffffff
+  display: grid
+  grid-template-columns: 1fr 2fr 1fr
+  background-color: #ffffff
+    
 
 footer
-	position: absolute
-	left: 0
-	bottom: 0
-	height: $footerHeight
+  display: grid
+  grid-template-columns: 1fr 2fr 1fr
+  position: absolute
+  left: 0
+  bottom: 20%
+  height: $footerHeight
+  border-top: 1px solid #d2d1d0
+  background-color: #f2f2f2
+  box-shadow:  0px -5px 5px -5px #888
