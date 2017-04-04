@@ -89,8 +89,9 @@ table {
   .phone p {
     font-family: segoe-ui-bold, Arial, sans-serif;
     color: #bfbfbf; }
-    .phone p span {
-      color: #e18711; }
+
+span {
+  color: #e18711; }
 
 html {
   height: 100%;
@@ -130,6 +131,28 @@ main .slider {
       main .slider .sl-buttons ul li:hover {
         cursor: pointer;
         background-color: #f0f0f0; }
+
+main .content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 1fr;
+  grid-template-columns: 4fr 1fr; }
+  main .content aside ul {
+    padding: 0 25px;
+    padding-right: 65px; }
+    main .content aside ul li {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-align: center;
+      align-items: center; }
+      main .content aside ul li img {
+        margin-top: 30px;
+        margin-bottom: 15px; }
+      main .content aside ul li p {
+        font-family: segoe-ui-bold, Arial, sans-serif;
+        color: #979797; }
 
 footer {
   position: absolute;
