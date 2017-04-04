@@ -50,7 +50,7 @@ $footerheaderHeight: 85px + 2px
     color: #bfbfbf
     span
       color: #e18711
-      
+
 html
   height: 100%;
   box-sizing: border-box;
@@ -65,7 +65,24 @@ body
 header
   +footerheader
   background-color: #ffffff
-    
+
+main
+  .slider
+    position: relative
+    display: flex
+    justify-content: center
+    .sl-buttons      
+      position: absolute
+      bottom: 10px
+      ul li
+        margin-right: 10px
+        display: inline-block
+        width: 9px
+        height: 9px
+        background-color: #d4dde1
+        &:hover
+          cursor: pointer
+          background-color: #f0f0f0
 footer
   position: absolute
   left: 0

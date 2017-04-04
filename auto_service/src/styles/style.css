@@ -112,6 +112,25 @@ header {
   height: 87px;
   background-color: #ffffff; }
 
+main .slider {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  main .slider .sl-buttons {
+    position: absolute;
+    bottom: 10px; }
+    main .slider .sl-buttons ul li {
+      margin-right: 10px;
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      background-color: #d4dde1; }
+      main .slider .sl-buttons ul li:hover {
+        cursor: pointer;
+        background-color: #f0f0f0; }
+
 footer {
   position: absolute;
   left: 0;
