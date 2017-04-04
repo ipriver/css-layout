@@ -63,6 +63,7 @@ table {
   .navigation a {
     margin-right: 25px;
     text-transform: uppercase;
+    font-size: 1em;
     font-family: segoe-ui-semibold, Arial, sans-serif;
     color: #848484;
     text-decoration: none; }
@@ -80,7 +81,8 @@ table {
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  font-size: 0.875em; }
   .phone h2 {
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -89,6 +91,8 @@ table {
   .phone p {
     font-family: segoe-ui-bold, Arial, sans-serif;
     color: #bfbfbf; }
+    .phone p span {
+      font-size: 1.125em; }
 
 span {
   color: #e18711; }
@@ -100,7 +104,7 @@ html {
 body {
   position: relative;
   margin: 0 auto;
-  padding-bottom: -87px;
+  padding-bottom: 87px;
   width: 1280px;
   min-height: 100%; }
 
@@ -136,23 +140,83 @@ main .content {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 4fr 1fr;
-  grid-template-columns: 4fr 1fr; }
-  main .content aside ul {
-    padding: 0 25px;
-    padding-right: 65px; }
-    main .content aside ul li {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -ms-flex-align: center;
-      align-items: center; }
-      main .content aside ul li img {
-        margin-top: 30px;
-        margin-bottom: 15px; }
-      main .content aside ul li p {
-        font-family: segoe-ui-bold, Arial, sans-serif;
-        color: #979797; }
+  grid-template-columns: 4fr 1fr;
+  padding-bottom: 70px; }
+  main .content section {
+    padding-left: 80px; }
+    main .content section article {
+      font-family: segoe-ui-bold, Arial, sans-serif; }
+      main .content section article:nth-child(2) p {
+        margin-bottom: 10px; }
+      main .content section article h2 {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-size: 1.875em;
+        text-transform: uppercase; }
+      main .content section article p {
+        color: #888888;
+        font-size: 0.75em; }
+      main .content section article table {
+        margin-bottom: 60px;
+        width: 100%;
+        color: #5e5e5e;
+        font-size: 1.125em; }
+        main .content section article table tr {
+          display: -ms-grid;
+          display: grid;
+          -ms-grid-columns: 4fr 6fr;
+          grid-template-columns: 4fr 6fr; }
+          main .content section article table tr td,
+          main .content section article table tr th {
+            display: -ms-flexbox;
+            display: flex;
+            height: 55px;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: center;
+            justify-content: center; }
+          main .content section article table tr th {
+            color: #ffffff;
+            text-transform: uppercase; }
+            main .content section article table tr th:nth-child(1) {
+              background-color: #ff8509; }
+            main .content section article table tr th:nth-child(2) {
+              background-color: #ffb76c; }
+          main .content section article table tr td:nth-child(2):before {
+            margin-right: 20px;
+            content: url(../images/marker.png); }
+      main .content section article a {
+        text-decoration: none; }
+        main .content section article a:hover {
+          text-decoration: underline;
+          -webkit-text-decoration-color: #e18711;
+          text-decoration-color: #e18711; }
+      main .content section article .descr-block {
+        margin-top: 25px;
+        font-size: 0.875em; }
+        main .content section article .descr-block .description {
+          margin-left: 40px;
+          color: inherit; }
+  main .content aside {
+    font-size: 0.875em; }
+    main .content aside ul {
+      padding: 0 25px;
+      padding-right: 65px; }
+      main .content aside ul li {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -ms-flex-align: center;
+        align-items: center; }
+        main .content aside ul li img {
+          margin-top: 30px;
+          margin-bottom: 15px; }
+        main .content aside ul li p {
+          font-family: segoe-ui-bold, Arial, sans-serif;
+          color: #979797; }
+          main .content aside ul li p span {
+            font-size: 1em; }
 
 footer {
   position: absolute;

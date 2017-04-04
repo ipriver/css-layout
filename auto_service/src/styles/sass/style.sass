@@ -26,6 +26,7 @@ $spanColor: #e18711
   a
     margin-right: 25px
     text-transform: uppercase
+    font-size: 1em
     font-family: segoe-ui-semibold, Arial, sans-serif
     color: #848484
     text-decoration: none
@@ -40,15 +41,17 @@ $spanColor: #e18711
   flex-direction: column
   justify-content: center
   align-items: center
+  font-size: 0.875em
   h2
     margin-bottom: 10px
     text-transform: uppercase
     font-family: segoe-ui, Arial, sans-serif
     color: #2c2c2c
   p
-
     font-family: segoe-ui-bold, Arial, sans-serif
     color: #bfbfbf
+    span
+      font-size: 1.125em
     
 
 span
@@ -61,7 +64,7 @@ html
 body
   position: relative
   margin: 0 auto
-  padding-bottom: -$footerheaderHeight
+  padding-bottom: $footerheaderHeight
   width: 1280px
   min-height: 100%
 
@@ -89,10 +92,60 @@ main
   .content
     display: grid
     grid-template-columns: 4fr 1fr
- 
+    padding-bottom: 70px
     section
-      
+      padding-left: 80px
+      article
+        font-family: segoe-ui-bold, Arial, sans-serif
+        &:nth-child(2)
+          p
+            margin-bottom: 10px
+        h2
+          margin-top: 25px
+          margin-bottom: 10px
+          font-size: 1.875em
+          text-transform: uppercase
+        p
+          color: #888888
+          font-size: 0.75em
+        table
+          margin-bottom: 60px
+          width: 100%
+          color: #5e5e5e
+          font-size: 1.125em
+          tr
+            display: grid
+            grid-template-columns: 4fr 6fr
+            td,
+            th
+              display: flex
+              height: 55px
+              align-items: center
+              justify-content: center
+            th
+              color: #ffffff
+              text-transform: uppercase
+              &:nth-child(1)
+                background-color: #ff8509
+              &:nth-child(2)
+                background-color: #ffb76c
+            td
+              &:nth-child(2):before
+                margin-right: 20px
+                content: url(../images/marker.png)
+        a
+          text-decoration: none
+          &:hover
+            text-decoration: underline
+            text-decoration-color: $spanColor
+        .descr-block
+          margin-top: 25px
+          font-size: 0.875em
+          .description
+            margin-left: 40px
+            color: inherit
     aside
+      font-size: 0.875em
       ul
         $advPud: 25px
         padding: 0 $advPud
@@ -107,8 +160,9 @@ main
           p
             font-family: segoe-ui-bold, Arial, sans-serif
             color: #979797
+            span
+              font-size: 1em
             
-
 footer
   position: absolute
   left: 0
