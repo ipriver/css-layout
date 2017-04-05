@@ -43,23 +43,23 @@ table {
 
 @font-face {
   font-family: helveticaLT;
-  src: url(./fonts/helvetica-light.ttf); }
+  src: url(../fonts/helvetica-light.ttf); }
 
 @font-face {
   font-family: helveticaNeueRoman;
-  src: url(./fonts/HelveticaNeue-Roman.ttf); }
+  src: url(../fonts/HelveticaNeue-Roman.ttf); }
 
 @font-face {
   font-family: helveticaLT-Bold;
-  src: url(./fonts/helvetica-lt-bold.ttf); }
+  src: url(../fonts/helvetica-lt-bold.ttf); }
 
 @font-face {
   font-family: helveticaRegular;
-  src: url(./fonts/helvetica-ce-regular.ttf); }
+  src: url(../fonts/helvetica-ce-regular.ttf); }
 
 @font-face {
   font-family: Exo-Bold;
-  src: url(./fonts/Exo-DemiBold-webfont.ttf); }
+  src: url(../fonts/Exo-DemiBold-webfont.ttf); }
 
 .deal-info {
   display: -ms-flexbox;
@@ -160,8 +160,8 @@ header {
       align-items: center;
       -ms-flex-pack: center;
       justify-content: center;
-      width: 145px;
-      height: 35px;
+      min-width: 145px;
+      min-height: 35px;
       color: #ffffff;
       font-family: helveticaLT-Bold, Arial, sans-serif;
       font-size: 1em;
