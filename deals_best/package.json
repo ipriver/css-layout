@@ -1,0 +1,23 @@
+{
+  "name": "deals_best",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ipriver/css-layout/"
+  },
+  "author": "ipriver",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
