@@ -1,0 +1,45 @@
+.news {
+    height: max-content;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.news a {
+    float: right;
+    margin-top: -10px;
+    color: #fb9c06;
+    text-decoration: none;
+    font-style: italic;
+    font-family: "CalibriLight", Arial, sans-serif;
+}
+
+.news a:hover {
+    text-decoration: underline;
+}
+
+.news article {
+    overflow: hidden;
+}
+
+.news article p {
+    line-height: 2.3rem;
+    font-family: "Calibri", Arial, sans-serif;
+}
+
+.news ul li {
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.news article {
+    margin: 0 20px;
+}
+
+.news ul li:nth-child(4n+1) {
+    margin-left: -25px;
+    
+}
+.news ul li:nth-child(4n) p{
+    margin-right: 0;
+}

@@ -1,0 +1,67 @@
+.message-form {
+    margin-top: -8px;
+    margin-bottom: 60px;
+    padding-top: 0px;
+    color: #fb9c06;
+    font-family: "StMarie", Arial, sans-serif;
+}
+
+.message-form label {
+    display: inline-block;
+    width: 130px;
+    font-size: 2.4rem;
+    vertical-align: top;
+}
+
+.message-form div {
+    margin-bottom: 35px;
+}
+
+textarea,
+.message-form input {
+    width: 1050px;
+    font-size: 2.4rem;
+    background-color: #f7f6f5;
+    border-top: 2px solid #d2d0cf;
+    border-left: 4px solid #d2d0cf;
+}
+
+.message-form input[name=name],
+.message-form input[name=email] {
+    height: 30px;
+}
+
+.message-form textarea {
+    height: 87px;
+    resize: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.message-form input[type=submit] {
+    float: right;
+    margin: -20px 30px 0 0;
+    height: 46px;
+    width: 175px;
+    font-size: 3rem;
+    font-family: inherit;
+    letter-spacing: 1px;
+    border: none;
+    color: #ffffff;
+    background-color: #fb9c06;
+    box-shadow: 0px 3px #cc830f;
+    cursor: pointer;
+}
+
+.message-form input[type=submit]:active {
+    box-shadow: 0px 3px #fb9c06
+}
+
+.message-form h2 {
+    margin-bottom: 68px;
+    font-size: 4.1rem;
+    text-decoration: underline;
+    text-align: center;
+    font-family: "StMarie", Arial, sans-serif;
+    letter-spacing: 1px;
+}

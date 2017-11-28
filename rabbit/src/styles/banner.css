@@ -1,0 +1,42 @@
+.banner {
+    position: relative;
+    z-index: 2;
+    margin-top: 132px;
+    height: 400px;
+    box-sizing: content-box;
+    border-bottom: 4px solid #fb9c06;
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e9fbff;
+}
+
+.banner-titles {
+    position: absolute;
+    top: 33%;
+    margin-left: 10px;
+}
+
+.banner p {
+    display: block;
+    padding-left: 30px;
+    width: max-content;
+    font-size: 3.8rem;
+    font-family: "Bebas", Arial, sans-serif;
+}
+
+.banner p:first-child {
+    margin: 0 auto;
+    padding: 12px 15px 12px 30px;
+    color: #fb9c06;
+    background-color: rgba(0,0,0,0.69)
+}
+
+.banner p:last-child {
+    bottom: 20%;
+    margin-top: 30px;
+    padding: 18px 21px 18px 30px;
+    color: #6e6d6b;
+    background-color: rgba(255, 175, 18, 0.7);
+}
+

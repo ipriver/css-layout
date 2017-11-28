@@ -1,0 +1,22 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 11px;
+    height: 70px;
+    width: 100%;
+    color: #ffffff;
+    background-color: #fb9c06;
+    text-align: center;
+    box-shadow: 0px 3px #cc830f;
+    font-size: 3.3rem;
+    letter-spacing: 1px;
+   
+}
+
+footer p {
+    margin: 0;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-family: "StMarie", Arial, sans-serif;
+}

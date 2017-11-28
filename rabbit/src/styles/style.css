@@ -1,0 +1,58 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("banner.css");
+@import url("news.css");
+@import url("team.css");
+@import url("message-form.css");
+@import url("normalize.css");
+
+@font-face {
+    font-family: "Calibri";
+    src: url("../fonts/Calibri.ttf")
+}
+
+@font-face {
+    font-family: "CalibriLight";
+    src: url("../fonts/calibril.ttf")
+}
+
+@font-face {
+    font-family: "Bebas";
+    src: url("../fonts/BEBAS.ttf")
+}
+
+@font-face {
+    font-family: "StMarie";
+    src: url("../fonts/StMarie-Thin.otf")
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+html {
+    height: 100%;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    padding-bottom: 80px;
+    min-height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.news::after,
+.news ul li:nth-child(4n)::after,
+.team::after,
+.message-form::after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: none;
+}

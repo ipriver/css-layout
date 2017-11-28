@@ -1,0 +1,99 @@
+header {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    height: 128px;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 4px solid #fb9c06;
+    font-family: "Calibri", Arial, sans-serif;
+}
+
+.logo img{
+    float: left;
+    margin-left: 15px;
+}
+
+.logo h1 {
+    float: left;
+    display: block;
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #fb9c06;
+    text-align: center;
+    font-size: 3.7rem;
+    letter-spacing: 1px;
+}
+
+.logo h1 span {
+    display: block;
+    margin-top: 3px;
+    color: #6e6d6b;
+    text-transform: uppercase;
+    font-family: "Bebas", Arial, sans-serif;
+}
+
+header nav {
+    float: right;
+    margin-top: 12px;
+}
+
+header nav * li {
+    display: inline-block;
+}
+
+header nav * a {
+    display: block;
+    margin-left: 78px;
+    height: max-content;
+    color: #9e9b9b;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+header nav li a i {
+    display: block;
+    margin-bottom: 10px;
+    height: 47px;
+    background-image: url("../images/sprites.png");
+}
+
+header nav * li:nth-child(2) a,
+header nav * li:nth-child(3) a {
+    margin-left: 65px;
+}
+
+header nav * li:nth-child(1) a i {
+    margin-left: 5px;
+    width: 45px;
+    background-position: 50px 0;
+}
+
+header nav * li:nth-child(2) a i {
+    margin-left: 20px;
+    width: 25px;
+    background-position: 0px 0;
+}
+
+header nav * li:nth-child(3) a i {
+    width: 45px;
+    background-position: 195px 0;
+}
+
+header nav * li:nth-child(4) a i {
+    margin-left: 1px;
+    width: 43px;
+    background-position: 150px 0;
+}
+
+header nav * li:nth-child(5) a i {
+    margin-left: 5px;
+    width: 55px;
+    background-position: 110px 0;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}

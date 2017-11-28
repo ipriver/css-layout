@@ -1,0 +1,74 @@
+.team h2 {
+    margin: 0;
+    margin-top: 48px;
+    color: #fb9c06;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 4.1rem;
+    font-family: "StMarie", Arial, sans-serif;
+    letter-spacing: 0.75px;
+}
+
+.team h3 {
+    color: #6e6d6b;
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+.team h3 span {
+    color: #fb9c06;
+}
+
+.team ul li {
+    position: relative;
+    float: left;
+    margin-top: 10px;
+    width: 33%;
+    box-sizing: border-box;
+}
+
+.team ul li:nth-child(3n)::after {
+    content: "";
+    display: block;
+    clear: right;
+}
+
+.team ul li:nth-child(3n+1) {
+    left: -75px;
+}
+
+.team ul li:nth-child(3n+2) {
+    left: 0px;
+}
+
+.team ul li:nth-child(3n+3) {
+    left: 60px;
+}
+
+
+.team figcaption {
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 250px;
+    color: #333333;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    overflow: hidden;
+}
+
+.team {
+    font-family: "CalibriLight", Arial, sans-serif;
+}
+
+.team img {
+    height: 300px;
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 7px solid #fb9c06;
+    background-color: #f3f18a;
+}
+
+.team * li:nth-child(2) {
+    color: red;
+}
